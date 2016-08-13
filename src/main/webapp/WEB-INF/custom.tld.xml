@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>My Custom Tags</description>
+	<tlib-version>2.1</tlib-version>
+	<short-name>mytags</short-name>
+	<tag>
+		<name>Hello</name>
+		<tag-class>com.mattbague.HelloTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+
+	<tag>
+		<name>Index</name>
+		<tag-class>com.mattbague.IndexTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+
+	<tag>
+		<name>GamePage</name>
+		<tag-class>com.mattbague.GamePageTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+	<tag>
+		<name>Search</name>
+		<tag-class>com.mattbague.SearchTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+	<tag>
+		<name>Recommendation</name>
+		<tag-class>com.mattbague.RecommendationTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+</taglib>

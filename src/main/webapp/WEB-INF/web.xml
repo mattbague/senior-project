@@ -1,0 +1,75 @@
+<!--
+  ~ Copyright 2010-2013, CloudBees Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<web-app
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        id="gamehubbub" version="2.5" metadata-complete="false">       
+	<!-- <servlet>
+	  <servlet-name>DeleteItemTaskController</servlet-name>
+	  <servlet-class>
+	    org.bibeault.some.project.controllers.DeleteItemTaskController
+	  </servlet-class>
+	</servlet>    
+	<servlet-mapping>
+	  <servlet-name>DeleteItemTaskController</servlet-name>
+	  <url-pattern>/task/deleteItem</url-pattern>
+	</servlet-mapping> -->
+	
+	<jsp-config>
+	  <jsp-property-group>
+	    <url-pattern>*.jsp</url-pattern>
+	     <scripting-invalid>true</scripting-invalid>
+	  </jsp-property-group>
+	</jsp-config>
+	
+	<servlet>
+	    <servlet-name>results</servlet-name>
+	    <jsp-file>/results.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>results</servlet-name>
+	    <url-pattern>/results</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+	    <servlet-name>browse</servlet-name>
+	    <jsp-file>/browse.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>browse</servlet-name>
+	    <url-pattern>/browse</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+	    <servlet-name>registration</servlet-name>
+	    <jsp-file>/registration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>registration</servlet-name>
+	    <url-pattern>/registration</url-pattern>
+	</servlet-mapping>			
+	
+	<servlet>
+	    <servlet-name>gamepage</servlet-name>
+	    <jsp-file>/gamepage.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>gamepage</servlet-name>
+	    <url-pattern>/gamepage</url-pattern>
+	</servlet-mapping>		
+
+</web-app>

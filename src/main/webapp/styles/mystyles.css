@@ -1,0 +1,133 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: "hurufo";
+	src: url('fonts/hurufo_numero/Hurufo & Numero.ttf'),
+		url('fonts/hurufo_numero/Hurufo & Numero.eot'); /* IE */
+}
+
+* {
+	/*font-family: hurufo, serif;*/
+	
+}
+
+.pad_topbar {
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+	border-bottom-color: purple !important; 
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.divide_white {
+	color: white !important;
+	background-color: white !important;
+	background: white !important;
+}
+
+.entry_img {
+	/*min-width: 180px !important;
+	min-height: 180px !important*/
+	max-width: 100% !important;
+	max-height: 180px !important;
+}
+
+.gap {
+	margin-top: 16px;
+}
+
+.release_panel_size {
+	/* min-height: 360px !important;
+	max-height: 360px !important;
+	width: 224px !important; */
+	min-height: 380px !important;
+	max-height: 380px !important;
+	width: 100% !important;
+}
+
+.search_panel_size {
+	min-height: 280px !important;
+	max-height: 280px !important;
+	width: 100% !important;
+}
+
+.panel_hl {
+	display: inline-block;
+	-webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;
+}
+
+.panel_hl:hover,.panel_hl:focus {
+	-webkit-box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
+	/*box-shadow: 0 0 6px 6px rgba(0, 140, 186, 0.5); }*/
+	box-shadow: 0 0 6px 4px rgba(50, 205, 50, 0.5);
+}
+
+.panel_hl.radius {
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+}
+.img_border {
+	border: 1px solid #9D4F4F;
+	/*box-shadow: 6px 6px 3px #888888; */
+}
+
+.sit_down {
+	position: absolute;
+	bottom: 32px;
+	max-width: 180px;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.game_title {
+	margin-top: 10px;
+	text-align: center !important;
+	margin-bottom: 10px
+}
+
+.game_title:hover {
+	text-decoration: underline;
+	color: black !important;
+}
+
+.img_gamepage {
+	max-width: 370px;
+}
+
+body {
+	/*http://subtlepatterns.com/*/
+	background: #EEEEEC;
+	background-image: url(cardboard_flat.png);
+	background-repeat: repeat;
+}
+
+.wrapper {
+	/*width: 64%;*/
+	width:1066px;
+	box-shadow: 3px 0 15px -4px gray, -4px 0 8px -4px gray;
+	margin: 0 auto;
+	background: white;
+	min-height: 100%;
+}
+
+tbody * {
+	font-size: 20px !important;
+	font-weight: bold;
+	color: #606060 !important; /*#4E4E4E*/
+}
+
+.search_tip {
+	background: #FAFAFF;
+}
